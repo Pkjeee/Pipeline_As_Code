@@ -3,7 +3,7 @@
 stage 'Dev'
 node ('linux') {
     checkout scm
-    mvn 'mvn clean package'
+    mvn 'clean package'
     dir('target') {stash name: 'war', includes: 'x.war'}
 }
 
@@ -16,7 +16,7 @@ parallel(longerTests: {
 
 stage name: 'Staging', concurrency: 1
 node ('linux') {
-    deploy 'staging'
+    deploy 'Staging'
 }
 
 input message: "Does staging look good?"
@@ -34,7 +34,7 @@ node ('linux'){
 }
 
 def mvn(args) {
-    sh "${args}"
+    sh "/app/maven-3.5/bin/mvn ${args}"
 }
 
 def runTests(duration) {
