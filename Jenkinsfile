@@ -34,7 +34,7 @@ node ('linux'){
 }
 
 def mvn(args) {
-    sh "mvn ${args}"
+    sh "${args}"
 }
 
 def runTests(duration) {
