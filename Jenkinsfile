@@ -3,7 +3,7 @@
 stage 'Dev'
 node ('linux') {
     checkout scm
-    mvn 'clean package'
+    mvn 'mvn clean package'
     dir('target') {stash name: 'war', includes: 'x.war'}
 }
 
