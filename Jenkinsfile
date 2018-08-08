@@ -1,9 +1,8 @@
 #!groovy
 
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '2', numToKeepStr: '2'))])
-
 stage 'Dev'
 node ('linux') {
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '2', numToKeepStr: '2'))])
     checkout scm
     mvn 'clean package'
     dir('target') {stash name: 'war', includes: 'x.war'}
