@@ -56,11 +56,7 @@
      <TR><TD class="bg1" colspan="2"><B>REPORT LINK</B></TD></TR>  
   </TABLE>
   <ul>
-    <li><a href="http://192.168.56.101/job/${JOB_NAME}/RUBOCOP_ANALYSIS_REPORT">http://192.168.56.102/job/${JOB_NAME}/RUBOCOP_ANALYSIS_REPORT</a></li>
-    <li><a href="http://192.168.56.101/job/${JOB_NAME}/SANDI_METER_REPORT">http://192.168.56.102/job/${JOB_NAME}/SANDI_METER_REPORT</a></li>
-    <li><a href="http://192.168.56.101/job/${JOB_NAME}/BRAKEMAN_SECURITY_REPORT">http://192.168.56.102/job/${JOB_NAME}/BRAKEMAN_SECURITY_REPORT</a></li>
-	<li><a href="http://192.168.56.102/job/${JOB_NAME}/RUBYCRITIC_ANALYSIS_REPORT">http://192.168.56.102/job/${JOB_NAME}/RUBYCRITIC_ANALYSIS_REPORT</a></li>
-	<li><a href="http://192.168.56.102/job/${JOB_NAME}/RSPEC_TEST_REPORT">http://192.168.56.102/job/${JOB_NAME}/RSPEC_TEST_REPORT</a></li>
+    <li><a href="http://192.168.56.101/job/${JOB_NAME}/SONAR_REPORT">http://192.168.56.102:9000/component_measures?id=DEMO-PIPE</a></li>
   </ul>
   <BR/> 
 </BODY>
